@@ -18,6 +18,8 @@ for i in range(num):
         if x == 0 and y == 0:
             answer = cnt
             break
+    if x == 0 and y == 0:
+        break
 
 if answer == 0:
     print(-1)
