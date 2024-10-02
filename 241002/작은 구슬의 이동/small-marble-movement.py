@@ -4,7 +4,7 @@ a = input().split(' ')
 x, y, d = int(a[1]), int(a[0]), a[2]
 # print(n, t, x, y, d)
 
-dx, dy = [1, 0, 0, -1], [0, 1, -1, 0]
+dx, dy = [1, 0, 0, -1], [0, -1, 1, 0]
 mapper = {
     'R':0,
     'U':1,
@@ -22,6 +22,6 @@ for i in range(t):
     else:
         d = 3 - d
         # x, y = x + dx[d], y + dy[d]
-    # print(x, y)
+    # print(i, x, y)
 
 print(y, x)
