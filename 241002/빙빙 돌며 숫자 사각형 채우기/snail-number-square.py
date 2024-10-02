@@ -1,13 +1,10 @@
 dx, dy = [0, 1, 0, -1], [1, 0, -1, 0]
-a = input().split(' ')
-n, m = int(a[0]), int(a[1]) # n이 행(x), m이 열(y)
+n, m = map(int, input().split(' '))
 
 array = [
     [0] * m
     for _ in range(n)
 ]
-
-# print(array)
 
 x, y, d = 0, 0, 0
 array[x][y] = 1
