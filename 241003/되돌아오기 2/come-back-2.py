@@ -14,6 +14,7 @@ for i in range(len(road)):
         x, y = x + dx[dir_num], y + dy[dir_num]
     else:
         dir_num += mapper[road[i]]
+        dir_num = (4 + dir_num) % 4
     if x == 0 and y == 0:
         print(i+1)
         break
