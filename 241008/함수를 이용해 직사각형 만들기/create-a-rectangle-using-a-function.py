@@ -1,5 +1,6 @@
 def p(n, m):
-    for _ in range(int(n)):
-        print('1'*int(m))
+    for _ in range(n):
+        print('1'*m)
 
-p(input().split())
+(n, m) = input().split()
+p(int(n), int(m))
