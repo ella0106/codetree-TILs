@@ -1,7 +1,7 @@
 a, b = tuple(map(int, input().split()))
 def has_num(n):
     n = str(n)
-    n_list = [n[0], n[1]]
+    n_list = [x for x in n]
     num_list = ['3', '6', '9']
     for num in num_list:
         if num in n_list:
