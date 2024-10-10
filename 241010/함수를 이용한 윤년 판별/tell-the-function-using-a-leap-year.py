@@ -5,4 +5,4 @@ def is_yoon(n):
         return True
     return False
 
-print(int(input()))
+print(is_yoon(int(input())))
