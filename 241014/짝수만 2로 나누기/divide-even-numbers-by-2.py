@@ -1,12 +1,11 @@
 def answer(arr):
     for elem in arr:
         # print('elem', elem)
-        e = int(elem)
-        if e % 2 == 0:
-            print(e // 2, end=' ')
+        if elem % 2 == 0:
+            print(elem // 2, end=' ')
         else:
-            print(e, end=' ')
+            print(elem, end=' ')
 
 n = input()
-arr = input().split(' ')
+arr = list(map(int, input().split(' ')))
 answer(arr[:])
