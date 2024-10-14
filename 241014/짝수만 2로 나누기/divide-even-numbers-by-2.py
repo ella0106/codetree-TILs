@@ -7,5 +7,5 @@ def answer(arr):
             print(elem, end=' ')
 
 n = input()
-arr = list(map(int, input().split(' ')))
+arr = list(map(int, input().split()))
 answer(arr[:])
