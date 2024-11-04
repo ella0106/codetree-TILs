@@ -1,7 +1,13 @@
 a, b, c = tuple(map(int, input().split()))
 day, hour, minute = 11, 11, 11
 elapsed = 0
-if day <= a or hour <= b or minute <= c:
+if day > a:
+    print(-1)
+elif day == a and hour > b:
+    print(-1)
+elif day == a and hour == b and minute > c:
+    print(-1)
+else:
     while True:
         if day == a and hour == b and minute == c:
             break
@@ -18,5 +24,3 @@ if day <= a or hour <= b or minute <= c:
             day += 1
 
     print(elapsed)
-else:
-    print(-1)
